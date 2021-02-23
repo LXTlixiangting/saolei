@@ -213,8 +213,8 @@
                 var idArrX = idArr && +idArr[0]
                 var idArrY = idArr && +idArr[1]
                 e && e.classList.add("subNum")
-                for (var i = idArrX - 1; i < idArrX + 1; i++) {
-                    for (var j = idArrY - 1; j < idArrY + 1; j++) {
+                for (var i = idArrX - 1; i < idArrX + 2; i++) {
+                    for (var j = idArrY - 1; j < idArrY + 2; j++) {
                         var numDiv = document.getElementById(i + "-" + j)
                         if (numDiv && numDiv.classList.contains("islei")) {
                             subNum++
@@ -223,8 +223,8 @@
                 }
                 e && (e.innerHTML = subNum)
                 if (subNum == 0) {
-                    for (var i = idArrX - 1; i < idArrX + 1; i++) {
-                        for (var j = idArrY - 1; j < idArrY + 1; j++) {
+                    for (var i = idArrX - 1; i < idArrX + 2; i++) {
+                        for (var j = idArrY - 1; j < idArrY + 2; j++) {
                             var nearDiv = document.getElementById(i + "-" + j)
                             if (nearDiv && nearDiv.length != 0) {
                                 if (!nearDiv.classList.contains("check")) {
